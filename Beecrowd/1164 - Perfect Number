@@ -1,0 +1,22 @@
+#include <stdio.h>
+ 
+int main() {
+ int N,i,j,X,sum;
+ scanf("%d",&N);
+ for(j=0;j<N;j++){
+     scanf("%d",&X);
+     sum=0;
+         for(i=1;i<X;i++){
+             if(X%i == 0){
+                 sum=sum+i;
+             }
+         }
+           if(sum==X){
+             printf("%d eh perfeito\n",X);
+         }
+         else{
+             printf("%d nao eh perfeito\n",X);
+         }
+     }
+    return 0;
+}
