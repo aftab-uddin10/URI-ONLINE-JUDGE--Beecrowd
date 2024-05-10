@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main() {
+ int N,i;
+ double avg,sum=0,count=0;
+ while(1){
+     scanf("%d",&N);{
+     if(N>0){
+         sum=sum+N;
+         count++;
+     }
+      if(N<=0){
+         break;
+     }
+     }
+ }
+ avg=sum/count;
+ printf("%.2lf\n",avg);
+ 
+    return 0;
+}
