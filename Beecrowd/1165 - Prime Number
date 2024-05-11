@@ -1,0 +1,23 @@
+#include <stdio.h>
+ 
+int main() {
+ int N,X,i,j,A=0;
+ scanf("%d",&N);
+ if(N>=1 && N<=100)
+ { for(i=0;i<N;i++){
+     scanf("%d",&X);
+      A=0;
+     for(j=2;j<X;j++){
+         if(X%j == 0){
+             A++;
+         }
+     }
+ if(A !=0){
+    printf("%d nao eh primo\n",X);
+ }
+ else{
+  printf("%d eh primo\n",X);}
+ }
+ }
+    return 0;
+}
