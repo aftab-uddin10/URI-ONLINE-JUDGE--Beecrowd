@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{
+     int i,j,x,y,p=10,q=1;
+      char O[2];
+    double sum=0.0,avg, M[12][12];
+    scanf("%s", &O);
+    for(i=0;i<12;i++)
+    {
+        for(j=0; j<12; j++)
+        scanf("%lf", &M[i][j]);
+
+    }
+          for(x=0;x<5;x++)
+          {
+                for(y=q;y<=p;y++)
+            sum=sum + M[x][y];
+           p--;
+           q++;
+        }
+    if(O[0]=='S')
+        printf("%.1lf\n",sum);
+    else if(O[0]=='M')
+    {
+        avg=sum/30.0;
+        printf("%.1lf\n",avg);
+    }
+    return 0;
+}
