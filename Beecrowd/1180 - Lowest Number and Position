@@ -1,0 +1,20 @@
+#include <stdio.h>
+ 
+int main() {
+ int N,i,A,B;
+ scanf("%d",&N);
+ int X[N];
+ for(i=0;i<N;i++)
+     scanf("%d",&X[i]);
+     A=X[0];
+      for(i=0;i<N;i++)
+     {
+         if(A>X[i]) {
+             A=X[i];
+             B=i;
+         }
+     }
+ printf("Menor valor: %d\n",A);
+ printf("Posicao: %d\n",B);
+    return 0;
+}
