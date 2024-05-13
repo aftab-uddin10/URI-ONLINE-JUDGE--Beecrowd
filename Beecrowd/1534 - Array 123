@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main()
+{
+    int N;
+    while(scanf("%d",&N)!=EOF)
+    {
+        int A[N][N];
+        int i,j,x;
+        for(i=0; i<N; i++)
+        {
+            for(j=0; j<N; j++)
+                A[i][j]=3;
+        }
+        for(i=0; i<N; i++)
+            A[i][i]=1;
+        x=N-1;
+        for(i=0,j=x; i<N;i++,j--)
+            A[i][j]=2;
+        for(i=0; i<N; i++)
+        {
+            for(j=0; j<N; j++)
+                printf("%d",A[i][j]);
+            printf("\n");
+        }
+    }
+    return 0;
+}
