@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+    int L,i,X,m=0;
+    while(scanf("%d",&L)!=EOF)
+    {
+        for(i=0,m=0; i<L; i++)
+        {
+            scanf("%d", &X);
+            if(X>m)
+                m=X;
+        }
+        if(m<10)
+            printf("1\n");
+        else if(m<20)
+            printf("2\n");
+        else
+            printf("3\n");
+    }
+    return 0;
+}
