@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    int x,y,z,m,e,f;
+    while(1)
+    {
+        scanf("%d", &x);
+        if(x==0) break;
+        else
+        {
+            scanf("%d%d", &y,&z);
+            m=x*y;
+            e=(m*100)/z;
+            f=pow(e,0.5);
+            printf("%d\n",f);
+        }
+    }
+    return 0;
+}
