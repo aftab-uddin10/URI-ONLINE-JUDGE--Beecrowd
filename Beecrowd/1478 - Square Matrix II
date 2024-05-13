@@ -1,0 +1,44 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,c,d,e,f=1,g=2,h,x=0,y=0,N,I,J;
+    while(1)
+    {
+        scanf("%d", &N);
+        if(N==0) break;
+        else
+        {
+            int A[N][N];
+            for(a=0;  a<N; a++)
+            {
+                for(b=0; b<N; b++)
+                    A[a][b]=1;
+            }
+            I=N-1; J=N;
+            for(e=0,f=1,g=2;e<I; e++)
+            {
+                for(c=0,d=f; d<N;d++,c++)
+                    A[c][d]=g;
+                f++; g++;
+            }
+            for(e=0,f=1,g=2;e<I; e++)
+            {
+                for(c=f,d=0; c<N;d++,c++)
+                 A[c][d]=g;
+                f++; g++;
+            }
+            for(x=0; x<N; x++)
+            {
+                for(y=0; y<N; y++)
+                {
+                    if(y==0)
+                        printf("%3d",A[x][y]);
+                else printf(" %3d",A[x][y]);
+                }
+                printf("\n");
+            }
+            printf("\n");
+        }
+    }
+    return 0;
+}
