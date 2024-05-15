@@ -1,0 +1,43 @@
+#include <stdio.h>
+ 
+int main() {
+ int A,B,C;
+ scanf("%d %d %d",&A,&B,&C);
+ if(A>B){
+     if(C>=B){
+         printf(":)\n");
+     }
+     else{
+         if((A-B) > (B-C)){
+              printf(":)\n");
+         }
+         else {
+             printf(":(\n");
+         }
+     }
+ }
+ else if(B>A){
+     if(C<=B){
+         printf(":(\n");
+     }
+     else {
+         if(B-A > C-B ){
+             printf(":(\n");
+         }
+          else {
+             printf(":)\n");
+         }
+     }
+ }
+ else {
+     if(C>B){
+           printf(":)\n");
+     }
+     else {
+          printf(":(\n"); 
+     }
+ }
+ 
+ 
+    return 0;
+}
