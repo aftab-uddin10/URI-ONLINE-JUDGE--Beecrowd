@@ -1,0 +1,17 @@
+#include <stdio.h>
+ 
+int main() {
+ int N,i,j,X,S=0;
+ scanf("%d",&N);
+ for(i=0;i<N;i++){
+     S=0;
+     scanf("%d",&X);
+     if(X%2 != 0){
+         S=S+1;
+         printf("%d\n",S);
+     }
+     else printf("%d\n",S);
+ }
+ 
+    return 0;
+}
