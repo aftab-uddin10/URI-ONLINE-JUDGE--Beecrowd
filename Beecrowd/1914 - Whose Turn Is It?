@@ -1,0 +1,23 @@
+#include <stdio.h>
+ 
+int main() {
+char A[10],B[10],C[10],D[10],E='PAR' , F='IMPAR' ;
+int N,i,X,Y,S;
+scanf("%d",&N);
+for(i=0;i<N;i++){
+      scanf("%s %s %s %s", A,B,C,D);
+        scanf("%d %d", &X, &Y);
+       S=X+Y;
+        if(B[0]=='P')
+        {
+            if(S%2==0) printf("%s\n",A);
+            else printf("%s\n",C);
+        }
+        else
+        {
+            if(S%2==0) printf("%s\n", C);
+            else printf("%s\n",A);
+        }
+}
+    return 0;
+}
