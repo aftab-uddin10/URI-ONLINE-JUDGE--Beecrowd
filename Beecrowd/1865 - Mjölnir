@@ -1,0 +1,16 @@
+#include <stdio.h>
+ 
+int main() {
+ char A[100];
+ int i,N,X;
+ scanf("%d",&N);
+ for(i=0;i<N;i++){
+     scanf("%s %d",&A,&X);
+     if(A[0]=='T' && A[1]=='h' && A[2]=='o' && A[3]=='r')
+     printf("Y\n");
+     else printf("N\n");
+     
+ }
+ 
+    return 0;
+}
