@@ -1,0 +1,25 @@
+#include <stdio.h>
+ 
+int main() {
+ int P,N,i,S,C=0;
+ scanf("%d %d",&P,&N);
+      int X[N];
+     for(i=0;i<N;i++)
+         scanf("%d",&X[i]);
+       for(i=1;i<N;i++){
+             S=0;
+             if(X[i]> X[i-1]){
+             S = X[i]-X[i-1];}
+             else{
+                 S= X[i-1]-X[i]; 
+             }
+             if(S>P) C=C+1;
+             i=i+1;
+         }
+        if(C==1){
+           printf("GAME OVER\n") ;}
+           
+     else printf("YOU WIN\n");
+ 
+    return 0;
+}
