@@ -1,0 +1,16 @@
+#include <stdio.h>
+ 
+int main() {
+ double A,B,S,X;
+ scanf("%lf %lf",&A,&B);
+ if(B>A){
+     S=B-A;
+     X=(S/A)*100.00;
+     printf("%.2lf%\n",X);
+ }
+ if(A==B){
+     X=0.00;
+     printf("%.2lf%\n",X);
+ }
+    return 0;
+}
