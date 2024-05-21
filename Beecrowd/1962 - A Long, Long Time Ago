@@ -1,0 +1,25 @@
+#include <stdio.h>
+ 
+int main() {
+int N,T,i,S;
+scanf("%d",&N);
+for(i=0;i<N;i++){
+    scanf("%d",&T);
+    if(T==2015){
+        S=0;
+     S=S+1;
+     printf("%d A.C.\n",S);
+    }
+    if(2015>T){
+        S=0;
+        S=2015 - T;
+        printf("%d D.C.\n",S);
+    }
+    if(T>2015){
+        S=0;
+        S= T-2014 ;
+        printf("%d A.C.\n",S);
+    }
+}
+    return 0;
+}
