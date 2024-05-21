@@ -1,0 +1,25 @@
+#include <stdio.h>
+ 
+int main() {
+ int N,i,X,Y;
+double s1,s2,s3,s4,s5,sum=0.00;
+ scanf("%d",&N);
+ for(i=0;i<N;i++){
+     scanf("%d %d",&X,&Y);
+     if(X==1001)
+         s1=Y*1.50;
+     if(X==1002)
+     s2=Y*2.50;
+     if(X==1003)
+     s3=Y*3.50;
+     if(X==1004)
+     s4=Y*4.50;
+     if(X==1005)
+     s5=Y*5.50;
+     
+ }
+ sum=s1+s2+s3+s4+s5;
+ printf("%.2lf\n",sum);
+ 
+    return 0;
+}
