@@ -1,0 +1,14 @@
+#include <stdio.h>
+ 
+int main() {
+double A,B,X,are,H;
+while(scanf("%lf %lf",&A,&B) != EOF){
+    X=B/2;
+    are= 3.14*X*X;
+    H= A/are ;
+    printf("ALTURA = %.2lf\n",H);
+    printf("AREA = %.2lf\n",are);
+}
+ 
+    return 0;
+}
