@@ -1,0 +1,14 @@
+#include <stdio.h>
+ 
+int main() {
+ int X,i,A,C=0;
+ scanf("%d",&X);
+ for(i=0;i<5;i++){
+     scanf("%d",&A);
+     if(A==X){
+         C++;
+     }
+ }
+ printf("%d\n",C);
+    return 0;
+}
