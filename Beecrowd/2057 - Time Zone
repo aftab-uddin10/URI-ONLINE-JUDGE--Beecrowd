@@ -1,0 +1,20 @@
+#include <stdio.h>
+ 
+int main() {
+ int A,B,C,S,X;
+ scanf("%d %d %d",&A,&B,&C);
+ {
+     S=A+B+C;
+     if(S>=24){
+          X=S-24;
+          printf("%d\n",X);
+     }
+     else if(S<0){
+         X=24+S;
+            printf("%d\n",X);
+     }
+     else printf("%d\n",S);
+     
+ }
+    return 0;
+}
