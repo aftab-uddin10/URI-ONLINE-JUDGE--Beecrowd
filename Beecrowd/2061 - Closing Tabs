@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+ 
+int main() {
+ int A,B,i,c;
+    char C[10];
+ scanf("%d %d",&A,&B);
+ c=A;
+ for(i=0;i<B;i++){
+     scanf("%s",C );
+     if(C[0] == 'f') c= c+1;
+     else c--;
+ }
+ printf("%d\n",c);
+ 
+    return 0;
+}
