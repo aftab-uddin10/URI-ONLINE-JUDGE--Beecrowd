@@ -1,0 +1,10 @@
+#include <stdio.h>
+ 
+int main() {
+ int N,S;
+ scanf("%d",&N);
+ S=((N+1)*(N+2))/2;
+ printf("%d\n",S);
+ 
+    return 0;
+}
