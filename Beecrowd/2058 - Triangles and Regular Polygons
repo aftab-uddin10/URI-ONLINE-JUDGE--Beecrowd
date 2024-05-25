@@ -1,0 +1,11 @@
+#include <stdio.h>
+ 
+int main() {
+ int N,S;
+ scanf("%d",&N);
+ S=N-2;
+ if(S>=0)
+ printf("%d\n",S);
+ else printf("0\n");
+    return 0;
+}
