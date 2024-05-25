@@ -1,0 +1,15 @@
+#include <stdio.h>
+ 
+int main() {
+ int N;
+ scanf("%d",&N);{
+ if(N==1) printf("Top 1\n");
+ if(N>1 && N<=3) printf("Top 3\n");
+  if(N>3 && N<=5) printf("Top 5\n");
+   if(N>5 && N<=10) printf("Top 10\n");
+    if(N>10 && N<=25) printf("Top 25\n");
+     if(N>25 && N<=50) printf("Top 50\n");
+      if(N>50 && N<=100) printf("Top 100\n");
+ }
+    return 0;
+}
