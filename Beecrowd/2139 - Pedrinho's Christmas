@@ -1,0 +1,20 @@
+#include <stdio.h>
+ 
+int main() {
+ int A,B,x,i;
+ int D[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 25};
+while(scanf("%d %d",&A,&B) != EOF){
+     if(A==12 && B==25) printf("E natal!\n");
+    else if(A==12 && B>25) printf("Ja passou!\n");
+    else if(A==12 && B==24) printf("E vespera de natal!\n");
+    else{
+        x = D[A-1] - B;
+            for(i = A ; i < 12; i++)
+                x += D[i];
+            printf("Faltam %d dias para o natal!\n", x);
+    }
+}
+ 
+ 
+    return 0;
+}
