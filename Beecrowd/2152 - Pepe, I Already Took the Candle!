@@ -1,0 +1,27 @@
+#include <stdio.h>
+ 
+int main() {
+ int N,H,M,O,i;
+ scanf("%d",&N);
+ for(i=0;i<N;i++){
+     scanf("%d %d %d",&H,&M,&O);
+     if(H<10 && M<10){
+          if(O==1) printf("0%d:0%d - A porta abriu!\n",H,M);
+     else printf("0%d:0%d - A porta fechou!\n",H,M);
+     }
+     else if(H<10 && M>=10){
+         if(O==1) printf("0%d:%d - A porta abriu!\n",H,M);
+     else printf("0%d:%d - A porta fechou!\n",H,M);
+     }
+      else if(H>=10 && M<10){
+         if(O==1) printf("%d:0%d - A porta abriu!\n",H,M);
+     else printf("%d:0%d - A porta fechou!\n",H,M);
+     }
+   else { if(O==1) printf("%d:%d - A porta abriu!\n",H,M);
+     else printf("%d:%d - A porta fechou!\n",H,M);
+ }
+ }
+ 
+ 
+    return 0;
+}
