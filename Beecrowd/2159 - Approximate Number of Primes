@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    double N, A,B;
+    scanf("%lf", &N);
+    A = N/log(N);
+    B= 1.25506*A;
+    printf("%.1lf %.1lf\n", A,B);
+    return 0;
+}
