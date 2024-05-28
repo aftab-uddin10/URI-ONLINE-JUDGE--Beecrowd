@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+int A,i,j,c=1;
+scanf("%d",&A);
+int X[A];
+for(i=0;i<A;i++)
+    scanf("%d",&X[i]);
+    if(A==2 && X[0]==X[1]) c = 0;
+    else
+    {
+        for(i=2; i<A; i++)
+        {
+            if(X[i] >= X[i-1] && X[i-1] >= X[i-2])
+            {
+                c = 0;
+                break;
+            }
+            else if(X[i] <= X[i-1] && X[i-1] <= X[i-2])
+            {
+                c = 0;
+                break;
+            }
+        }
+    }
+    if(c==1) printf("1\n");
+    else printf("0\n");
+ 
+    return 0;
+}
