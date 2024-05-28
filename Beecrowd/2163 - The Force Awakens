@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main()
+{
+    int A,B, i, j, c= 0, X= 0, Y= 0;
+    scanf("%d %d", &A, &B);
+    int M[A][B];
+    for(i=0; i<A; i++)
+        for(j=0; j<B; j++)
+            scanf("%d", &M[i][j]);
+
+    for(i=1; i<A-1; i++)
+    {
+        for(j=1; j<B-1; j++)
+        {
+            if(M[i][j]==42)
+         if(M[i-1][j-1]==7 && M[i-1][j]==7 && M[i-1][j+1]==7)
+                    if(M[i][j-1]==7 && M[i][j+1]==7)
+         if(M[i+1][j-1]==7 && M[i+1][j]==7 && M[i+1][j+1]==7)
+                        {
+                            c= 1;
+                            X = i+1;
+                            Y = j+1;
+                        }
+        }
+    }
+    printf("%d %d\n", X, Y);
+    return 0;
+}
