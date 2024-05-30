@@ -1,0 +1,22 @@
+#include <stdio.h>
+ 
+int main() {
+int N,i,j;
+scanf("%d",&N);
+int A[N+1][N+1];
+for(i=0;i<=N;i++){
+    for(j=0;j<=N;j++)
+    scanf("%d",&A[i][j]);
+}
+  for(i=0; i<N; i++)
+    {
+        for(j=0; j<N; j++)
+        {
+            if(A[i][j]+A[i][j+1]+A[i+1][j]+A[i+1][j+1] < 2)
+                printf("U");
+            else printf("S");
+        }
+        printf("\n");
+    }
+    return 0;
+}
