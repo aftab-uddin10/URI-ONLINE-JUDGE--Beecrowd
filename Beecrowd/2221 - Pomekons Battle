@@ -1,0 +1,23 @@
+#include <stdio.h>
+ 
+int main() {
+ int N,i,B,j,X,Y,Z,X1,Y1,Z1;
+ double A,a;
+ scanf("%d",&N);
+ for(i=0;i<N;i++){
+     scanf("%d",&B);
+  scanf("%d %d %d",&X,&Y,&Z);
+      scanf("%d %d %d",&X1,&Y1,&Z1);{
+         A= (X+Y)/2.00 ;
+         if(Z%2==0) A +=B;
+         a= (X1+Y1)/2.00 ;
+          if(Z1%2==0) a +=B;
+          
+          if(A>a) printf("Dabriel\n");
+          else if(a>A) printf("Guarte\n");
+          else printf("Empate\n");
+      }
+ }
+ 
+    return 0;
+}
