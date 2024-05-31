@@ -1,0 +1,10 @@
+#include <stdio.h>
+ 
+int main() {
+ double H,P,avg=0.00;
+ scanf("%lf %lf",&H,&P);
+ avg= H/P;
+ printf("%.2lf\n",avg);
+ 
+    return 0;
+}
