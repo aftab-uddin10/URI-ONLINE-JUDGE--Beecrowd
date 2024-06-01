@@ -1,0 +1,29 @@
+#include <stdio.h>
+ 
+int main() {
+ int N,i,A,B,C,a,b,c;
+ char p[100];
+ double X=0.00,Y=0.00,Z=0.00;
+ double X1=0.00,Y1=0.00,Z1=0.00;
+ double S,M,T;
+ scanf("%d",&N);
+ for(i=0;i<N;i++){
+     scanf("%s",p);
+     scanf("%d %d %d",&A,&B,&C);
+      scanf("%d %d %d",&a,&b,&c);
+       X=X+A;
+     X1=X1+a;
+     Y=Y+B;
+     Y1=Y1+b;
+     Z=Z+C;
+     Z1=Z1+c;
+ }
+ S=(X1/X)*100.00 ;
+ M=(Y1/Y)*100.00 ;
+ T=(Z1/Z)*100.00 ;
+ printf("Pontos de Saque: %.2lf %%.\n",S);
+ printf("Pontos de Bloqueio: %.2lf %%.\n",M);
+ printf("Pontos de Ataque: %.2lf %%.\n",T);
+ 
+    return 0;
+}
