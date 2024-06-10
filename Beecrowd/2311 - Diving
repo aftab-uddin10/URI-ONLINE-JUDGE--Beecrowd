@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int N, i, j;
+    char A[1000];
+    double X,Y;
+    scanf("%d", &N);
+    for(i=0; i<N; i++)
+    {
+        double m= -10.00,n = 100.00, sum= 0.00;
+        scanf("%s",A);
+        scanf("%lf", &X);
+        for(j=0; j<7; j++)
+        {
+            scanf("%lf", &Y);
+            if(Y>m) m=Y;
+            if(Y < n) n =Y;
+            sum += Y;
+        }
+        sum -= (m+n);
+        sum *= X;
+        printf("%s %.2lf\n",A,sum);
+    }
+    return 0;
+}
