@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+struct c
+{
+    char b[50];
+} A[10] ;
+int main()
+{
+
+    while (scanf("%s%s%s%s%s%s%s%s%s%s", A[0].b, A[1].b, A[2].b, A[3].b, A[4].b, A[5].b, A[6].b, A[7].b, A[8].b, A[9].b) != EOF)
+    {
+        printf("%s\n%s\n%s\n", A[2].b, A[6].b, A[8].b);
+    }
+
+    return 0;
+}
