@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+
+{
+    char A[500];
+    int i=0, j, x;
+
+    while (fgets(A, 500, stdin) !=0)
+    {
+        x=strlen(A);
+        i=0;
+        while (A[i]!=',')
+        {
+            printf("%c",A[i]);
+            ++i;
+        }
+
+        printf("\n");
+
+        for (j=++i; j<x; ++j)
+            printf("%c", A[j]);
+    }
+}
