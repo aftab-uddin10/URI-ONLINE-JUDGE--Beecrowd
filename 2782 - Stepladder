@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int b(int *, int);
+int main ()
+{
+
+	int i,A;
+	scanf("%d", &A);
+	int arr[A];
+	for (i = 0; i < A; ++i)
+		scanf("%d", &arr[i]);
+	printf("%d\n", b(arr, A));
+}
+
+int b(int *arr, int tam)
+{
+	int i;
+	int x, y, z;
+	if (tam == 1 || tam == 2)
+		return 1;
+   
+   	z = 1;
+	x = arr[0] - arr[1];
+	for (i = 2; i < tam; ++i)
+	{
+		y = arr[i - 1] - arr[i];
+		if (y != x)
+			x = y, z++;
+	}
+	return z;
+}
