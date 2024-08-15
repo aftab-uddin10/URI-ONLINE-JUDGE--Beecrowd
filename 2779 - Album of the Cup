@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() {
+ int N,M,i,j;
+ scanf("%d %d",&N,&M);
+ int X[M],temp,sum=1,ans=0;
+ for(i=0;i<M;i++){
+     scanf("%d",&X[i]);
+ }
+  for (i=0; i < M-1; i++) {
+        for (j = 0; j <M-i-1; j++) {
+            if (X[j] > X[j+1]) {
+                temp = X[j];
+                X[j] =X[j+1];
+               X[j+1] = temp;
+            }
+        }
+    }
+   for (i=1; i < M; i++) {
+         if(X[i] != X[i-1]){
+             sum=sum+1;
+         }
+     }
+    ans=N-sum;
+ printf("%d\n",ans);
+    return 0;
+}
