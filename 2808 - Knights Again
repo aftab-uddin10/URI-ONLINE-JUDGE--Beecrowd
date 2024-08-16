@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+#include<string.h>
+
+int main()
+{
+    char x[3], y[3];
+    int a, b, C;
+    while(scanf("%s %s", x, y)!=EOF)
+    {
+
+        a = x[0] - y[0];
+        b = x[1] - y[1];
+
+        C=abs(a*a)+abs(b*b);
+        if(C==5)printf("VALIDO\n");
+        else
+            printf("INVALIDO\n");
+        C=0;
+    }
+    return 0;
+}
