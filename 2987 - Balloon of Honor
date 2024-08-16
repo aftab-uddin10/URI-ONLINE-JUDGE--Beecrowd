@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+  char x;
+  scanf("%c",&x);
+  int i, k;
+  for(i=0,k=65;i<26;i++,k++){
+      if(x==k){
+        break;
+      }
+  }
+  printf("%d\n",++i);
+  return 0;
+}
