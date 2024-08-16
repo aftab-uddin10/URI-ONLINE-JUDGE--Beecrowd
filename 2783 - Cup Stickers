@@ -1,0 +1,28 @@
+#include <stdio.h>
+typedef struct A{
+
+	int B;
+	int C;
+} A;
+
+A album[101] = { 0 };
+
+int main ()
+{
+	int i,x,y,z,t;
+	scanf("%d %d %d", &x, &y, &z);
+	for (i = 0; i < y; ++i)
+	{
+		scanf("%d", &t);
+		album[t].B = 1;
+	}
+	for (i = 0; i < z; ++i)
+	{
+		scanf("%d", &t);
+		album[t].C =1;
+	}
+	for (i = 1; i <= x; ++i)
+		if (album[i].C && album[i].B)
+			y--;
+	printf("%d\n", y);
+}
