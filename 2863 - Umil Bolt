@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main ()
+{
+
+	int n,i;
+	float A,B;
+
+	while (scanf("%d", &n) != EOF)
+	{
+		B = 100.0f;
+		for ( i = 0; i < n; ++i)
+		{
+			scanf("%f", &A);
+			if (A < B)
+		     	B = A;
+		}
+		printf("%.2f\n", B);
+	}
+
+}
