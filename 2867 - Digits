@@ -1,0 +1,13 @@
+#include <stdio.h>
+ #include <math.h>
+int main() {
+ int n,i,a,b,x;
+ scanf("%d",&n);
+ for(i=0;i<n;i++){
+     scanf("%d %d",&a,&b);
+     x = pow(a,b);
+     x=b*log10(a)+1;
+     printf("%d\n",x);
+ }
+    return 0;
+}
