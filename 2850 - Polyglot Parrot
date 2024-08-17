@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+int main ()
+{
+	char A[10];
+	while (scanf(" %[^\n]",A) != EOF)
+	{
+
+		if (strcmp(A, "esquerda") == 0)
+			printf("ingles\n");
+		else if (strcmp(A, "direita") == 0)
+			printf("frances\n");
+		else if (strcmp(A, "nenhuma") == 0)
+			printf("portugues\n");
+		else if (strcmp(A, "as duas") == 0)
+			printf("caiu\n");
+
+	}
+
+}
