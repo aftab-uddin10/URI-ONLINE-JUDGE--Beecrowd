@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(){
+    int n, i,x,y,c=0;
+    scanf("%d", &n);
+    while (n--)
+    {
+        scanf("%d %d", &x, &y);
+          c=x/y;
+        c+=x%y;
+        printf("%d\n", c);
+
+    }
+}
