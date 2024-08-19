@@ -1,0 +1,17 @@
+#include <stdio.h>
+ 
+int main() {
+ int n,i;
+ int g=0,b=0;
+ scanf("%d",&n);
+ char A[10],B;
+ for(i=0;i<n;i++){
+     scanf("%s %c",A,&B);
+     if(B =='F') g++;
+     else b++;
+ }
+ printf("%d carrinhos\n",b);
+  printf("%d bonecas\n",g);
+ 
+    return 0;
+}
