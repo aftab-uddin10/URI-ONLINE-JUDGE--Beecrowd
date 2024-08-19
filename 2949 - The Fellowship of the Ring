@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h> 
+int main() {
+ int N,i,a=0,b=0,c=0,d=0,e=0;
+ scanf("%d",&N);
+ char A[20],B;
+ for(i=0;i<N;i++){
+     scanf("%s %c",A,&B);
+     if(B=='A') d++;
+      if(B=='E') c++;
+       if(B=='H') b++;
+        if(B=='M') e++;
+         if(B=='X') a++;
+ }
+ printf("%d Hobbit(s)\n",a);
+ printf("%d Humano(s)\n",b);
+ printf("%d Elfo(s)\n",c);
+ printf("%d Anao(oes)\n",d);
+ printf("%d Mago(s)\n",e);
+ 
+    return 0;
+}
