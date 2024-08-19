@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+ int N,G,i,X,j,S=0;
+ scanf("%d %d",&N,&G);
+ char A[N];
+ int B[N];
+ for(i=0;i<N;i++){
+     scanf("%c %d",&A[i],&B[i]);
+ }
+ scanf("%d",&X);
+ char C[X];
+ for(j=0;j<X;j++){
+     scanf("%c",&C[j]);
+ }
+ for(j=0;j<X;j++){
+     for(i=0;i<N;i++){
+         if(C[j]==A[i]) S=S+B[i];
+     }
+ }
+ printf("%d\n",G);
+ if(G>S) printf("My precioooous\n");
+ else printf("You shall pass!\n");
+ 
+    return 0;
+}
