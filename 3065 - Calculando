@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, t = 0;
+    char A[1000];
+    while(++t)
+    {
+        int i, ans = 0, d = 0, c = 1;
+        scanf("%d", &n);
+        if(n == 0)
+            break;
+        scanf("%s", A);
+        for(i=0; A[i]; i++)
+        {
+            if(A[i] == '-')
+            {
+                if(c == 0) ans -= d;
+                else ans += d;
+                c = 0; d = 0;
+            }
+            else if(A[i] == '+')
+            {
+                if(c == 0) ans -= d;
+                else ans += d;
+                c = 1; d = 0;
+            }
+            else if(A[i]>=48 && A[i]<=58)
+                d = d*10+(A[i]-48);
+        }
+        if(c == 0) ans -= d;
+        else ans += d;
+
+        printf("Teste %d\n", t);
+        printf("%d\n\n", ans);
+    }
+    return 0;
+}
