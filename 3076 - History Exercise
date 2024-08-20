@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+ int N,x=0;
+ while(scanf("%d",&N) != EOF){
+     x= N/100;
+     if(N%100 != 0) printf("%d\n",x+1);
+     else printf("%d\n",x);
+ }
+ 
+    return 0;
+}
