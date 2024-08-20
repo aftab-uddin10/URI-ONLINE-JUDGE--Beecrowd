@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <string.h> 
+int main() {
+ char A[300];
+ scanf("%s",A);
+ printf("Nao se refuta ciencia com opiniao\n");
+ 
+    return 0;
+}
