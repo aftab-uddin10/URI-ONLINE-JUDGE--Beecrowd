@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main() {
+ int A,B,C;
+ scanf("%d %d %d",&A,&B,&C);
+ if(A>B && A<C || A<B && A>C) printf("huguinho\n");
+  if(B>A && B<C || B<A && B>C) printf("zezinho\n");
+  if(C>A && C<B || C<A && C>B) printf("luisinho\n");
+ 
+    return 0;
+}
