@@ -1,0 +1,13 @@
+#include <stdio.h>
+ #include <stdlib.h>
+int main() {
+ int B,G,x,y;
+ scanf("%d %d",&B,&G);
+ x=G/2;
+ if(x<=B) printf("Amelia tem todas bolinhas!\n");
+ else{
+     y=abs(x-B);
+ printf("Faltam %d bolinha(s)\n",y);
+ }
+    return 0;
+}
