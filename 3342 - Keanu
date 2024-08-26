@@ -1,0 +1,14 @@
+#include <stdio.h>
+ 
+int main() {
+ int n,white,black;
+ scanf("%d",&n);
+if (n % 2 == 0)
+  white = black = (n * n) / 2;
+else{
+  black = (n * n) / 2;
+  white = black + 1;}
+printf("%d casas brancas e %d casas pretas\n",white, black);
+ 
+    return 0;
+}
