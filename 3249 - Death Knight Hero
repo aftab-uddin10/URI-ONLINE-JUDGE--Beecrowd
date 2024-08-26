@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+int n,c=0;
+scanf("%d", &n);
+while(n--) {
+char A[1001];
+scanf("%s", A);
+int len;
+len=strlen(A);
+int i;
+for (i = 0; i < len-1; i++) {
+if (A[i]=='C' && A[i+1] =='D') {
+break;
+}
+}
+if (i==len-1) {
+c++;
+}
+}
+printf("%d\n", c);
+return 0;
+}
