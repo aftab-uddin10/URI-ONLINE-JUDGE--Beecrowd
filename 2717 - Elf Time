@@ -1,0 +1,15 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ int N,A,B;
+ cin>> N;
+  cin>> A >> B;
+ if(N >= (A+B)){
+     cout<<"Farei hoje!\n" ;
+ }
+ else cout<<"Deixa para amanha!\n" ;
+ 
+    return 0;
+}
