@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int A, i, n;
+    int X[2000];
+
+    for (i = 0; i  <  2000; ++i)
+        X[i] = 0;
+        
+        cin >> A;
+    for (i = 0; i < A; ++i) {
+        cin >> n;
+        ++X[n-1];
+    }
+
+    for (i = 0; i < 2000; ++i)
+        if (X[i] != 0)
+        cout << i+1 << " aparece " << X[i] << " vez(es)" << endl;
+    return 0;
+}
