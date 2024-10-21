@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(){
+    char A[1000];
+    long long b, cont;
+    double total;
+    
+    cont = 0;
+    total = 0.0;
+    
+    while(scanf("%[^\n]",&A) != EOF){
+          scanf("%*c%lld%*c",&b);
+          total +=b;
+          cont++;
+    }
+    
+    printf("%.1lf\n", total/(float)cont);
+    return 0;
+}
