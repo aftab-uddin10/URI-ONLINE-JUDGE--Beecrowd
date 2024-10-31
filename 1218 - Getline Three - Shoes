@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(){
+    int n, A, i=0;
+    int  p, f, m;
+    char c, b;
+    
+    while(scanf("%d",&n) != EOF){
+        if(i != 0) printf("\n");
+        p = 0;
+        f = 0;
+        m = 0;
+        while(scanf("%d %c%c",&A,&c,&b) == 3){
+            if(A == n){
+                p++;
+                if(c == 'F') f++;
+                else m++;
+            }
+            if(b == '\n') break;
+        }
+        i++;
+        printf("Caso %d:\nPares Iguais: %d\nF: %d\nM: %d\n",i,p,f,m);
+    }
+    
+    return 0;
+}
