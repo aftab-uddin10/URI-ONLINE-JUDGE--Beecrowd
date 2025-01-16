@@ -1,0 +1,43 @@
+/***
+            Bismillahir Rahmanir Rahim
+            Start with the name of Allah, who created you!!!
+            Author : MD Aftab Uddin Bhuiyan
+            Department of CSE, Dhaka international University, Bangladesh.
+***/
+
+
+#include <stdio.h>
+int main(){
+    
+    int n, A, zero, b,c, d;
+    
+    while(true){
+                scanf("%d",&n);
+                if(n == 0) break;
+                zero = 0;
+                b = 0;
+                c = 0;
+                d = 0;
+                for(int i = 0; i < n; i++){
+                        scanf("%d", &A);
+                        if(A == 0 && c == 0){
+                                  zero++;
+                                  d++;
+                        }
+                        else if(A == 0 && c == 1){
+                                   d++;
+                        }if(A == 1){
+                                   c = 1;
+                                   b += d/2;
+                                   d = 0;
+                        }
+                }
+                if(d > 0){
+                          b -= zero/2;
+                          d += zero;
+                          b += d/2;
+                }
+                printf("%d\n", b);
+    }
+    return 0;
+}
