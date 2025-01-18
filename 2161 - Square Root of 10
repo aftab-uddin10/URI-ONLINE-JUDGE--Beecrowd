@@ -1,0 +1,21 @@
+/***
+            Bismillahir Rahmanir Rahim
+            Start with the name of Allah, who created you!!!
+            Author : MD Aftab Uddin Bhuiyan
+            Department of CSE, Dhaka international University, Bangladesh.
+***/
+
+#include <stdio.h>
+int main()
+{
+    double n, A = 0.0;
+    scanf("%lf", &n);
+    while(n--)
+    {
+        A= A+ 6.0;
+        A = 1.0/A;
+    }
+    A += 3.0;
+    printf("%.10lf\n", A);
+    return 0;
+}
