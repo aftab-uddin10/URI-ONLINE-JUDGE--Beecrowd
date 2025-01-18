@@ -1,0 +1,20 @@
+/***
+            Bismillahir Rahmanir Rahim
+            Start with the name of Allah, who created you!!!
+            Author : MD Aftab Uddin Bhuiyan
+            Department of CSE, Dhaka international University, Bangladesh.
+***/
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    double N, X, Y,F;
+    scanf("%lf", &N);
+    X = (1 + sqrt(5))/2.0;
+    Y = (1 - sqrt(5))/2.0;
+    F = (pow(X,N) - pow(Y,N))/sqrt(5);
+    printf("%.1lf\n",F);
+    return 0;
+}
